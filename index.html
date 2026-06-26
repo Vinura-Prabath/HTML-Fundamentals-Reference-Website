@@ -105,10 +105,700 @@
         </li>
     </ol>
 
-    <footer>
-        <p>&copy; 2026 Institute of Computer Engineering Technology (ICET). All Rights Reserved.</p>
-        <p>Coursework Assignment Submission File</p>
-    </footer>
+   <hr>
+   <br>
+
+   <article>
+                <h4>1. &lt;html&gt;</h4>
+                <p><strong>Purpose:</strong> Represents the root of an HTML document; all other elements must be descendants of this tag.</p>
+                <p><strong>When to use:</strong> Wrapped around the entire webpage structure directly after the doctype declaration.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;html lang="en"&gt;
+    &lt;!-- Page contents go here --&gt;
+&lt;/html&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>2. &lt;head&gt;</h4>
+                <p><strong>Purpose:</strong> Contains machine-readable information (metadata) about the document that isn't directly visible to users.</p>
+                <p><strong>When to use:</strong> Placed as the immediate first child within the root html tag, preceding the body content.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>3. &lt;title&gt;</h4>
+                <p><strong>Purpose:</strong> Defines the webpage title displayed in the browser tab and search engine results results pages.</p>
+                <p><strong>When to use:</strong> Required inside the head tag for proper validation, SEO, and document bookmarking names.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;title&gt;HTML Fundamentals Reference System&lt;/title&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>4. &lt;meta&gt;</h4>
+                <p><strong>Purpose:</strong> Specifies metadata such as character encoding, page description, viewport control, and search keywords.</p>
+                <p><strong>When to use:</strong> Positioned inside the head element to instruct the browser how to parse text or handle page scales.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;meta name="description" content="A comprehensive guide to 75 HTML tags."&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>5. &lt;link&gt;</h4>
+                <p><strong>Purpose:</strong> Specifies relationships between the current document and external files or resources.</p>
+                <p><strong>When to use:</strong> Commonly deployed to link external CSS stylesheets, load web fonts, or establish favicons.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;link rel="stylesheet" href="assets/styles.css"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>6. &lt;style&gt;</h4>
+                <p><strong>Purpose:</strong> Contains internal styling information (CSS properties) applied directly to the current HTML layout document.</p>
+                <p><strong>When to use:</strong> Embedded within the head when styles are single-page specific and do not warrant an external file asset.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;style&gt;
+    body { background-color: #f8fafc; }
+&lt;/style&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>7. &lt;script&gt;</h4>
+                <p><strong>Purpose:</strong> Embeds or links executable client-side scripting logic, typically JavaScript, to enable dynamic page interactions.</p>
+                <p><strong>When to use:</strong> Added to the head or right before the closing body tag to load operational software interactions.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;script&gt;
+    console.log("HTML Reference Page Loaded Successfully");
+&lt;/script&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>8. &lt;noscript&gt;</h4>
+                <p><strong>Purpose:</strong> Defines alternative HTML blocks to display when script execution is disabled or unsupported by the browser.</p>
+                <p><strong>When to use:</strong> Deployed alongside script tags to notify users that certain features require JavaScript validation.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;noscript&gt;
+    &lt;p&gt;Please enable JavaScript to view interactive features on this portal.&lt;/p&gt;
+&lt;/noscript&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>9. &lt;base&gt;</h4>
+                <p><strong>Purpose:</strong> Establishes the primary base URL and target parameters for all relative hyperlinks contained on a page.</p>
+                <p><strong>When to use:</strong> Stored once inside the head block when all local asset downloads share an identical directory path route.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;base href="https://www.example.com/assets/" target="_blank"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>10. &lt;body&gt;</h4>
+                <p><strong>Purpose:</strong> Encapsulates all rendering content of an HTML document, such as images, links, text, forms, and tables.</p>
+                <p><strong>When to use:</strong> Follows the closing head element; there must be exactly one body tag present within a page.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;body&gt;
+    &lt;p&gt;All visual page content lives inside this interface element.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>11. &lt;header&gt;</h4>
+                <p><strong>Purpose:</strong> Represents introductory markup groupings, typically housing corporate branding, headers, or local navigation bars.</p>
+                <p><strong>When to use:</strong> Set at the top of web layouts or separate section panels to give distinct structural layout landmarks.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;header&gt;
+    &lt;h1&gt;Developer Documentation Network&lt;/h1&gt;
+&lt;/header&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>12. &lt;nav&gt;</h4>
+                <p><strong>Purpose:</strong> Demarcates sections containing hyperlinks intentionally designed to navigate across site structures or page anchors.</p>
+                <p><strong>When to use:</strong> Encloses primary top menus, dynamic layout links, table of contents, or structural indexes.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;nav&gt;
+    &lt;a href="#theory"&gt;Theory Overview&lt;/a&gt; | &lt;a href="#dictionary"&gt;Tag Matrix&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>13. &lt;main&gt;</h4>
+                <p><strong>Purpose:</strong> Designates the central unique, non-repeating content payload of the specific page layout document flow.</p>
+                <p><strong>When to use:</strong> Placed as a direct core descendant of body to separate primary content landmarks from shared global bars.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;main&gt;
+    &lt;!-- Central assignment content must populate this area --&gt;
+&lt;/main&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>14. &lt;section&gt;</h4>
+                <p><strong>Purpose:</strong> Defines generic thematic standalone blocks of a document that relate to a distinct standalone topic heading.</p>
+                <p><strong>When to use:</strong> Used to segment comprehensive documents into explicit, organized chapters or operational regions.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;section id="internet-theory"&gt;
+    &lt;h2&gt;Network Architecture Core Summary&lt;/h2&gt;
+&lt;/section&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>15. &lt;article&gt;</h4>
+                <p><strong>Purpose:</strong> Represents a self-contained content node that could theoretically be independently reused or syndicated elsewhere.</p>
+                <p><strong>When to use:</strong> Wrapping distinct standalone widgets like technical blog articles, forum comments, or dictionary item entries.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;article&gt;
+    &lt;h3&gt;Understanding DNS&lt;/h3&gt;
+    &lt;p&gt;DNS resolves domain paths into accessible physical destination strings.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>16. &lt;aside&gt;</h4>
+                <p><strong>Purpose:</strong> Identifies sections composed of content tangentially related to the adjacent primary reading area.</p>
+                <p><strong>When to use:</strong> Utilized to house structural documentation sidebars, glossary reference popups, callout boxes, or related advertising elements.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;aside&gt;
+    &lt;h5&gt;Quick Specification Metric&lt;/h5&gt;
+    &lt;p&gt;HTML5 was formally finalized by the W3C consortium in 2014.&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>17. &lt;footer&gt;</h4>
+                <p><strong>Purpose:</strong> Establishes a terminal block segment for enclosing copyright notices, site data parameters, or reference disclaimers.</p>
+                <p><strong>When to use:</strong> Mounted at the baseline footer boundaries of page documents or separate layout article items.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;footer&gt;
+    &lt;p&gt;&amp;copy; 2026 Academic Development Portal.&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>18. &lt;address&gt;</h4>
+                <p><strong>Purpose:</strong> Marks physical contact info details, email URLs, map pointers, or telephone channels for an author or business entity.</p>
+                <p><strong>When to use:</strong> Placed inside structural footer blocks to give automated web indexers an explicitly verified contact point mapping.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;address&gt;
+    Contact help lines at &lt;a href="mailto:info@icet.lk"&gt;info@icet.lk&lt;/a&gt;
+&lt;/address&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>19. &lt;h1&gt; to &lt;h6&gt;</h4>
+                <p><strong>Purpose:</strong> Designates six sequential tiers of heading hierarchies; h1 denotes prime importance and h6 signals minor subdivisions.</p>
+                <p><strong>When to use:</strong> Employed to build precise visual outlines and outline text documents logically for web semantic screen readers.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;h1&gt;Global Network Standards&lt;/h1&gt;
+&lt;h2&gt;Sub-Section Reference&lt;/h2&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>20. &lt;p&gt;</h4>
+                <p><strong>Purpose:</strong> Represents a structural paragraph unit designed to wrap standard readable textual copy cleanly.</p>
+                <p><strong>When to use:</strong> Deployed whenever presenting sequential blocks of running descriptive sentences throughout text layouts.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Web layouts remain robust and accessible when structured around strict semantics.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>21. &lt;hr&gt;</h4>
+                <p><strong>Purpose:</strong> Denotes an explicit thematic variance or topical shift within document text layouts; visually renders a line division.</p>
+                <p><strong>When to use:</strong> Positioned between paragraph groups or layout steps without executing an entire macro block element conversion.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Section evaluation content ends here.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Next structural component evaluation continues below.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>22. &lt;pre&gt;</h4>
+                <p><strong>Purpose:</strong> Defines explicit blocks of preformatted text where white space distributions and code character distances are perfectly preserved.</p>
+                <p><strong>When to use:</strong> Bound directly around code blocks, complex terminal layouts, ASCII diagrams, or poetry text styles.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;pre&gt;
+    Indents and line breaks
+    remain intact.
+&lt;/pre&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>23. &lt;blockquote&gt;</h4>
+                <p><strong>Purpose:</strong> Indicates that the wrapped content block is an extensive direct quote sourced from an external reference or publication system.</p>
+                <p><strong>When to use:</strong> Use with an optional `cite` attribute specifying web URLs to properly declare structural citations.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;blockquote cite="https://www.w3.org/"&gt;
+    &lt;p&gt;The semantic web empowers machines to seamlessly interpret distributed raw data profiles.&lt;/p&gt;
+&lt;/blockquote&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>24. &lt;ul&gt;</h4>
+                <p><strong>Purpose:</strong> Declares an unordered collection cluster list whose items are graphically flagged with standard geometric bullets.</p>
+                <p><strong>When to use:</strong> Grouping relevant list entries whose evaluation order sequences can change without altering the core textual summary meaning.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;Hypertext Transfer Protocol&lt;/li&gt;
+    &lt;li&gt;Domain Name Server&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>25. &lt;ol&gt;</h4>
+                <p><strong>Purpose:</strong> Initializes ordered listing arrays where nested internal elements are automatically numbered sequentially by browsers.</p>
+                <p><strong>When to use:</strong> Used for procedural setup guides, execution frameworks, algorithmic loops, or indexed tables of data summaries.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;ol&gt;
+    &lt;li&gt;Register Domain Endpoint&lt;/li&gt;
+    &lt;li&gt;Map Target Server IP&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>26. &lt;li&gt;</h4>
+                <p><strong>Purpose:</strong> Declares an isolated entry item belonging to a surrounding list container framework.</p>
+                <p><strong>When to use:</strong> Must always operate as a direct nested child node located inside an existing parent ul or ol layout system.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;li&gt;Isolated array item parameter&lt;/li&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>27. &lt;dl&gt;</h4>
+                <p><strong>Purpose:</strong> Initializes a multi-line descriptive association list designed to house pairings of technical glossary terms and explanations.</p>
+                <p><strong>When to use:</strong> Highly effective for writing dictionary lookups, technical metadata files, or tracking configuration keys.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;dl&gt;
+    &lt;dt&gt;LKR&lt;/dt&gt;
+    &lt;dd&gt;Sri Lankan Rupee Currency Designation&lt;/dd&gt;
+&lt;/dl&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>28. &lt;dt&gt;</h4>
+                <p><strong>Purpose:</strong> Specifies the literal label or term name inside a description list index map structure.</p>
+                <p><strong>When to use:</strong> Placed directly inside a parent dl block, immediately preceding its corresponding dd description node.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;dt&gt;HTTP Response Status 200&lt;/dt&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>29. &lt;dd&gt;</h4>
+                <p><strong>Purpose:</strong> Provides the descriptive payload or definition block relating directly to the term label variable that came before it.</p>
+                <p><strong>When to use:</strong> Positioned immediately below its respective dt sibling element within a parent description listing.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;dd&gt;Signals that the server successfully located and transmitted requested network files.&lt;/dd&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>30. &lt;figure&gt;</h4>
+                <p><strong>Purpose:</strong> Encloses separate media illustrations, schematic diagrams, source files, code examples, or independent image groups.</p>
+                <p><strong>When to use:</strong> Deployed when media modules function as a unified group and need separation from main content blocks.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;figure&gt;
+    &lt;img src="assets/client-server.png" alt="Server Flow Model"&gt;
+&lt;/figure&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>31. &lt;figcaption&gt;</h4>
+                <p><strong>Purpose:</strong> Formulates a structured explanatory caption text card directly bound to an overall parent figure wrapper asset.</p>
+                <p><strong>When to use:</strong> Set inside a figure element as the very first or final child node to provide descriptive contextual context labels.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;figcaption&gt;Figure 1.2: Diagram illustrating the modern internet DNS telephone translation system.&lt;/figcaption&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>32. &lt;div&gt;</h4>
+                <p><strong>Purpose:</strong> Functions as a generic block-level element container that holds zero native semantic meaning on its own.</p>
+                <p><strong>When to use:</strong> Utilized purely as an absolute base element to manipulate site styling boundaries via global CSS frameworks.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;div class="custom-card-wrapper"&gt;
+    &lt;p&gt;Content isolated within layout zones.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>33. &lt;a&gt;</h4>
+                <p><strong>Purpose:</strong> Implements an interactive anchor hyperlink redirection node that bridges paths to external target assets or page anchors.</p>
+                <p><strong>When to use:</strong> Combined with an explicit href target attribute to build functional navigation systems across web addresses.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;a href="https://www.icet.lk" target="_blank"&gt;Visit ICET Platform&lt;/a&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>34. &lt;em&gt;</h4>
+                <p><strong>Purpose:</strong> Injects text emphasis to change how sentences are parsed, rendered visually as oblique italic glyphs by default browsers.</p>
+                <p><strong>When to use:</strong> Employed inline inside structural paragraphs to explicitly emphasize key concepts.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Developers &lt;em&gt;must&lt;/em&gt; test site interfaces across varying viewport sizes.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>35. &lt;strong&gt;</h4>
+                <p><strong>Purpose:</strong> Communicates strong importance, core value priority, or critical safety announcements inside long sentence flows.</p>
+                <p><strong>When to use:</strong> Wrapped around system alerts, vital terms, or technical conditions needing bold visual prominence.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;&lt;strong&gt;Critical Security Notice:&lt;/strong&gt; Sanitize login password inputs before database execution.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>36. &lt;small&gt;</h4>
+                <p><strong>Purpose:</strong> Reduces text font presentation sizing scale by one step to isolate side notes, fine prints, or licensing disclosures.</p>
+                <p><strong>When to use:</strong> Deployed in site footers for privacy references, global legal notices, or small technical release notations.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;small&gt;Product release build v1.2.4-stable registration certification rules.&lt;/small&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>37. &lt;s&gt;</h4>
+                <p><strong>Purpose:</strong> Renders a clear strikethrough line across characters to denote information that has lost relevance or accuracy over time.</p>
+                <p><strong>When to use:</strong> Representing legacy pricing maps during promotion events or outdated registration instructions.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Registration standard entry baseline cost: &lt;s&gt;LKR 60000&lt;/s&gt; LKR 55000.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>38. &lt;cite&gt;</h4>
+                <p><strong>Purpose:</strong> Declares an explicit citation reference marker naming an authoritative source book, paper document, or essay work.</p>
+                <p><strong>When to use:</strong> Surrounding title strings of textbooks, assignment reference manuals, or software code guidelines.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Definitions were cross-examined directly with the standard &lt;cite&gt;MDN Web Core Manual&lt;/cite&gt;.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>39. &lt;q&gt;</h4>
+                <p><strong>Purpose:</strong> Indicates that the enclosed inline text segment is a short quotation, instructing browsers to automatically append quote marks.</p>
+                <p><strong>When to use:</strong> Use for quick, concise verbal quotes wrapped inline inside standard paragraph groupings.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;The protocol documentation states: &lt;q&gt;HTTPS ensures data transmission integrity via encryption layers.&lt;/q&gt;&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>40. &lt;dfn&gt;</h4>
+                <p><strong>Purpose:</strong> Pinpoints the exact instance where a new word or technical terminology expression is defined within a text passage.</p>
+                <p><strong>When to use:</strong> Enclosing the primary term title during its absolute first deep introduction context on a platform.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;A &lt;dfn&gt;Client-Server Model&lt;/dfn&gt; partitions processing tasks between centralized hosts and local end-point request tools.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>41. &lt;abbr&gt;</h4>
+                <p><strong>Purpose:</strong> Highlights text acronyms or shorthand codes, providing full definitions via a tool-tip using the global title attribute.</p>
+                <p><strong>When to use:</strong> Wrapped around network terms (DNS, HTML, HTTP) to help screen readers announce acronyms correctly.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;The architecture relies heavily on &lt;abbr title="Domain Name System"&gt;DNS&lt;/abbr&gt; query lookups.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>42. &lt;data&gt;</h4>
+                <p><strong>Purpose:</strong> Links user-facing presentation content strings with a machine-readable value string via an integrated value attribute.</p>
+                <p><strong>When to use:</strong> Used when wrapping structural content to help search data processors map precise numerical data formats.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Inventory Selection: &lt;data value="ITEM-90822"&gt;Advanced Core Database Connector License&lt;/data&gt;&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>43. &lt;time&gt;</h4>
+                <p><strong>Purpose:</strong> Declares specific dates, timestamps, or duration intervals in an explicit machine-readable datetime text notation format.</p>
+                <p><strong>When to use:</strong> Bound around project calendars, server tracking stamps, or deadline milestones to optimize indexing engines.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;The final portal deadline falls on &lt;time datetime="2026-07-15"&gt;July 15, 2026&lt;/time&gt;.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>44. &lt;code&gt;</h4>
+                <p><strong>Purpose:</strong> Injects a monospaced font formatting style code inline to signify literal code strings, variables, or functions.</p>
+                <p><strong>When to use:</strong> Used inside running paragraph text whenever calling out individual SQL values, PHP scripts, or tag tokens.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Ensure your database updates column values via the target &lt;code&gt;UPDATE&lt;/code&gt; function query statement.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>45. &lt;var&gt;</h4>
+                <p><strong>Purpose:</strong> Highlights specific variable placeholder terms within programming scripts, technical equations, or operational math equations.</p>
+                <p><strong>When to use:</strong> Enclosing abstract mathematical characters or symbolic code parameter tokens inside technical guides.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Let &lt;var&gt;x&lt;/var&gt; equate to the balance remaining inside the billing processing layout function.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>46. &lt;samp&gt;</h4>
+                <p><strong>Purpose:</strong> Represents sample text output generated directly by a backend computer system console, application program, or hardware device.</p>
+                <p><strong>When to use:</strong> Documenting accurate error strings, compiler alerts, or system confirmation values logs within text layouts.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;The terminal displayed: &lt;samp&gt;Fatal Error: Connection to database failed at port 3306&lt;/samp&gt;.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>47. &lt;kbd&gt;</h4>
+                <p><strong>Purpose:</strong> Signals precise user keyboard button strokes, voice parameters, or operational input macros needed to execute tasks.</p>
+                <p><strong>When to use:</strong> Bound around terminal commands or keyboard layout combinations within technical operation manuals.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;To quickly save your current local file revisions, execute the &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt; combination input command.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>48. &lt;sub&gt;</h4>
+                <p><strong>Purpose:</strong> Shits character layouts slightly lower than standard reading lines, reducing size down to subscript scales.</p>
+                <p><strong>When to use:</strong> Processing specific chemical structures, molecular tracking tokens, or mathematical coordinate systems.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;The foundational compound is tracked using the sequence: C&lt;sub&gt;6&lt;/sub&gt;H&lt;sub&gt;12&lt;/sub&gt;O&lt;sub&gt;6&lt;/sub&gt;.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>49. &lt;sup&gt;</h4>
+                <p><strong>Purpose:</strong> Positions typography characters slightly higher than standard reading lines to build superscript scales.</p>
+                <p><strong>When to use:</strong> Writing mathematical exponents, ordinals, calendar layout extensions, or footnote reference IDs.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Einstein established the relationship equation as E = mc&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>50. &lt;mark&gt;</h4>
+                <p><strong>Purpose:</strong> Mimics a visual highlight background tone over target text to indicate high situational relevance.</p>
+                <p><strong>When to use:</strong> Highlighting search matching paths or calling out critical metrics within extensive text fields.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;The student evaluation criteria specifically mandates compiling &lt;mark&gt;75 HTML tags&lt;/mark&gt; with clean validation.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>51. &lt;span&gt;</h4>
+                <p><strong>Purpose:</strong> Acts as a generic inline text container carrying zero default styling or structural semantics on its own.</p>
+                <p><strong>When to use:</strong> Used to wrap micro-target phrase strings to easily manipulate specific styling parameters via global CSS hooks.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;User accounts are labeled as &lt;span style="color: #0ea5e9;"&gt;Active Developers&lt;/span&gt;.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>52. &lt;br&gt;</h4>
+                <p><strong>Purpose:</strong> Forcefully injects a solid line break (carriage-return) directly into a continuous running text layout line.</p>
+                <p><strong>When to use:</strong> Enforcing strict multi-line paragraph layouts inside shipping address parameters, poems, or text scripts.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;ICET Institute HQ Block,&lt;br&gt;Colombo Office Region,&lt;br&gt;Western Province, Sri Lanka.&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>53. &lt;wbr&gt;</h4>
+                <p><strong>Purpose:</strong> Line Break Opportunity token; signals to browsers where it is safe to split a long text string if viewports narrow.</p>
+                <p><strong>When to use:</strong> Placed inside ultra-long URL address paths, code files, or network string metrics to avoid horizontal scroll bugs.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;p&gt;Sub-Directory: custom&lt;wbr&gt;_module&lt;wbr&gt;_application&lt;wbr&gt;_installer_terminal.exe&lt;/p&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>54. &lt;table&gt;</h4>
+                <p><strong>Purpose:</strong> Generates structured formal tabular grid frameworks designed to host multi-dimensional datasets cleanly.</p>
+                <p><strong>When to use:</strong> Displaying complex database column schemas, numerical metrics, financial tracking data, or course timelines.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;table&gt;
+    &lt;!-- Row structures, columns and heading tags compile inside this --&gt;
+&lt;/table&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>55. &lt;caption&gt;</h4>
+                <p><strong>Purpose:</strong> Formulates a clear accessibility heading label descriptive title explicitly bound to its parent table structure.</p>
+                <p><strong>When to use:</strong> Positioned as the absolute first child element inside a data table node block to aid screen-reading layouts.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;table&gt;
+    &lt;caption&gt;Database Account Matrix Metrics&lt;/caption&gt;
+&lt;/table&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>56. &lt;colgroup&gt;</h4>
+                <p><strong>Purpose:</strong> Groups structural vertical columns within a parent table block to define unified styling across layout tracks.</p>
+                <p><strong>When to use:</strong> Positioned immediately above table headers when setting background tracking widths to matching table columns.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col span="2" style="background-color: #f0f9ff;"&gt;
+    &lt;/colgroup&gt;
+&lt;/table&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>57. &lt;col&gt;</h4>
+                <p><strong>Purpose:</strong> Sets column-specific property configurations across target vertical tracks inside an existing colgroup table cluster.</p>
+                <p><strong>When to use:</strong> Implemented inside colgroup components as an empty self-closing element to configure structural table styles.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;col style="width: 150px; text-align: center;"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>58. &lt;thead&gt;</h4>
+                <p><strong>Purpose:</strong> Encapsulates table rows that serve as the main horizontal label headers of a data table map.</p>
+                <p><strong>When to use:</strong> Groups label parameters separately from table bodies to keep complex data layouts scrolling smoothly.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Parameter Name&lt;/th&gt;
+    &lt;/tr&gt;
+&lt;/thead&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>59. &lt;tbody&gt;</h4>
+                <p><strong>Purpose:</strong> Bundles the primary core row values dataset entries together within an existing multi-column table element.</p>
+                <p><strong>When to use:</strong> Follows the structural closing thead block, containing the core records of the table architecture.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Core Row Cell Entry&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tbody&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>60. &lt;tfoot&gt;</h4>
+                <p><strong>Purpose:</strong> Collects horizontal summary calculations, total metrics, or baseline indicator rows at the absolute bottom of a data table.</p>
+                <p><strong>When to use:</strong> Mounted below table bodies to clearly compute aggregate results or final billing data summaries.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;tfoot&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Total Bill Summary: LKR 15000&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/tfoot&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>61. &lt;tr&gt;</h4>
+                <p><strong>Purpose:</strong> Instantiates an isolated single horizontal data row grid channel container within tables.</p>
+                <p><strong>When to use:</strong> Acts as a row container that houses individual th header labels or td regular data cells.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;tr&gt;
+    &lt;td&gt;Cell element data parameter&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>62. &lt;th&gt;</h4>
+                <p><strong>Purpose:</strong> Declares an individual heading label text cell, centered and bolded by default to serve as a category header.</p>
+                <p><strong>When to use:</strong> Implemented inside header tracking rows to specify what data populates the columns below it.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;th&gt;Account Registry Code&lt;/th&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>63. &lt;td&gt;</h4>
+                <p><strong>Purpose:</strong> populates standard data record values or layout text files inside an existing row framework grid.</p>
+                <p><strong>When to use:</strong> Placed inside standard data rows to store text strings, numerical metrics, links, or image variables.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;td&gt;SEC-9082&lt;/td&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>64. &lt;form&gt;</h4>
+                <p><strong>Purpose:</strong> Implements interactive data collection segments containing UI components to capture and transmit user entries.</p>
+                <p><strong>When to use:</strong> Bound around survey cards, admin login fields, registration layouts, or billing search fields.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;form action="/process-registration" method="POST"&gt;
+    &lt;!-- Form input blocks go here --&gt;
+&lt;/form&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>65. &lt;label&gt;</h4>
+                <p><strong>Purpose:</strong> Allocates explicit accessibility caption titles linked directly to specific form input controls.</p>
+                <p><strong>When to use:</strong> Bound to input fields via the `for` attribute to expand clickable touch surfaces and assist screen readers.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;label for="developer-id"&gt;Developer Registry Code:&lt;/label&gt;
+&lt;input type="text" id="developer-id"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>66. &lt;input&gt;</h4>
+                <p><strong>Purpose:</strong> Generates multi-purpose input controls based on its `type` configuration to capture data from users.</p>
+                <p><strong>When to use:</strong> Core building block inside forms; types include text strings, passwords, numbers, checkboxes, and radio fields.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;input type="password" id="user-pass" placeholder="Enter security passphrase"&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>67. &lt;button&gt;</h4>
+                <p><strong>Purpose:</strong> Declares clickable interactive button components that trigger actions, reset inputs, or submit forms.</p>
+                <p><strong>When to use:</strong> Used inside form layouts to trigger data posts or call external JavaScript event loops.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;button type="submit"&gt;Execute Update Configuration&lt;/button&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>68. &lt;select&gt;</h4>
+                <p><strong>Purpose:</strong> Builds interactive dropdown selection menus to constrain user entries to predefined choices.</p>
+                <p><strong>When to use:</strong> Added to form fields when picking explicit states, currency designations, or localized module codes.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;select name="currency-selector" id="curr"&gt;
+    &lt;option value="lkr"&gt;Sri Lankan Rupee&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>69. &lt;optgroup&gt;</h4>
+                <p><strong>Purpose:</strong> Organizes related choice options within a dropdown element under a shared, un-selectable group label heading.</p>
+                <p><strong>When to use:</strong> Splitting extensive select options into clear categories like geographical regions or language frameworks.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;select&gt;
+    &lt;optgroup label="Western Province Office"&gt;
+        &lt;option value="colombo"&gt;Colombo Campus Head&lt;/option&gt;
+    &lt;/optgroup&gt;
+&lt;/select&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>70. &lt;option&gt;</h4>
+                <p><strong>Purpose:</strong> Declares an isolated pick value selection record item contained inside surrounding selector listings.</p>
+                <p><strong>When to use:</strong> Sequentially nested inside parent select tags, datalist frameworks, or optgroup elements.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;option value="Java"&gt;Java Backend Enterprise Engine&lt;/option&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>71. &lt;textarea&gt;</h4>
+                <p><strong>Purpose:</strong> Renders multi-line raw plain-text text fields enabling extensive text entry tracking inputs.</p>
+                <p><strong>When to use:</strong> Implemented inside feedback cards, assignment summary inputs, or system error diagnostics entries.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;textarea id="feedback-note" rows="5" placeholder="Enter project summary notes..."&gt;&lt;/textarea&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>72. &lt;datalist&gt;</h4>
+                <p><strong>Purpose:</strong> Hosts groups of predefined option configurations to enable autocomplete suggestions over connected text input nodes.</p>
+                <p><strong>When to use:</strong> Combined with an input element using the list attribute to display matching suggestions as the user types.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+    &lt;option value="Google Chrome"&gt;
+&lt;/datalist&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>73. &lt;fieldset&gt;</h4>
+                <p><strong>Purpose:</strong> Groups closely related input fields and controls together within a clear outer visual border container.</p>
+                <p><strong>When to use:</strong> Structuring extensive form fields into organized subsections like user accounts, address registries, or security inputs.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;fieldset&gt;
+    &lt;legend&gt;Admin Gateway Verification&lt;/legend&gt;
+    &lt;input type="text" placeholder="Registry Pass"&gt;
+&lt;/fieldset&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>74. &lt;legend&gt;</h4>
+                <p><strong>Purpose:</strong> Injects a clean accessibility heading text label caption directly onto its enclosing parent fieldset element container boundary.</p>
+                <p><strong>When to use:</strong> Placed as the immediate first element inside a fieldset block to serve as a section category description.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;legend&gt;Identity Profiling Parameters&lt;/legend&gt;</code></pre>
+            </article>
+
+            <article>
+                <h4>75. &lt;output&gt;</h4>
+                <p><strong>Purpose:</strong> Declares an explicit graphic layout space engineered to display the live calculation values generated by a form.</p>
+                <p><strong>When to use:</strong> Displaying the real-time sum of input sliders or counting elements on a page.</p>
+                <p><strong>Example Code Snippet:</strong></p>
+<pre><code>&lt;form oninput="result.value=parseInt(a.value)+parseInt(b.value)"&gt;
+    &lt;input type="number" id="a" value="10"&gt; + &lt;input type="number" id="b" value="5"&gt;
+    = &lt;output name="result" for="a b"&gt;15&lt;/output&gt;
+&lt;/form&gt;</code></pre>
+            </article>
     
 </body>
 </html>
